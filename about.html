@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="utf-8" http-equiv="encoding">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta name='description' content='TODO'/>
+<head>
+    <title>Parodia - Sanat ve Hayat</title>
+    <link rel="shortcut icon" type="image/jpg" href="media/services/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="links/main.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <!-- nav section -->
+        <header>
+            <nav class="frame">
+                <div class="frame__title-wrap">
+                    <a class="frame__title" href="index.html">PARODIA.</a>
+                </div>
+                <a class="frame__behance" href="#">Be.</a>
+                <div class="frame__links">
+                    <a href="about.html">Hakkında</a>
+                </div>
+                <div class="frame__twitter">
+                    <a href="#" class="frame__demo">Tw.</a>
+                </div>
+            </nav><!-- nav end -->
+        </header>
+        <div class="content--about" id="replace-color">
+            <section class="first--section">
+                <p>Fatih *** ***; 19** yılında [Türkiye]***/***'da doğdu. 2016'da *** Üniversitesi, Sosyal Bilimler Enstitüsü, Resim Anasanat Dalında "Nitelik Olarak Kitsch" isimli tezini sunarak "Yüksek Lisans" derecesini aldı.</p>
+                <p>Uzun yıllardır Dijital Ortam'a büyük bir ilgi duysa da, geleneksel olarak duyumsanabilecek "Tuval Ortamı" ve modern olanın bir parçası olarak "Dijital Ortam" arasında kavramsal bir bütünlük kurmaya çalıştı. Halen rastlantısallık ve tabiri caizse "Generative Art" üzerine çalışmalarını sürdürmektedir.</p>                    
+            </section>
+            <section class="second--section">
+                <p>İletişim;</p>
+                <p>beparodia@gmail.com</p>
+            </section>
+            <section class="end--section">
+                <a href="https://www.behance.net/sfsolmz">Behance</a>
+                <a href="https://twitter.com/tw_parodia">Twitter</a>
+                <a href="https://github.com/parodia">Github</a>
+                <a href="#">Blog</a>
+            </section>
+            <hr>
+            <footer class="footer">
+                <small><b>Parodia</b> &copy; 2021 &mdash; <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr">BY-NC-SA 4.0</a></small>
+                <img src="media/interface/logo.svg" alt="Parodia" style="width: 22px; height: auto; float: right; user-select: none;">
+            </footer>
+        </div>
+    </main>
+    <script>
+        $(document).on('scroll', function(){
+            if ( $(window).scrollTop() > 750) {
+                $('#replace-color').addClass('change-color');
+                $("a").css('color', 'white');
+                $("body").css('background-color', '#8791b0');
+            } else {
+                $('#replace-color').removeClass('change-color');
+                $("a").css('color', '#242217');
+                $("body").css('background-color', 'white');
+            }
+        });
+    </script>
+</body>
+</html>

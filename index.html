@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="utf-8" http-equiv="encoding">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta name='description' content='TODO'/>
+<head>
+    <link rel="shortcut icon" type="image/jpg" href="media/services/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="links/main.css" />
+    <link rel="stylesheet" type="text/css" href="links/slider.css" />
+	<title>Parodia - Sanat ve Hayat</title>
+</head>
+<body>
+    <main>        
+        <!-- nav section -->
+        <header>
+            <nav class="frame">
+                <div class="frame__title-wrap">
+                    <a class="frame__title" href="index.html">PARODIA.</a>
+                </div>
+                <a target="_blank" class="frame__behance" href="https://www.behance.net/sfsolmz">Be.</a>
+                <div class="frame__links">
+                    <a href="about.html">Hakkında</a>
+                </div>
+                <div class="frame__twitter">
+                    <a target="_blank" href="https://twitter.com/tw_parodia" class="frame__demo">Tw.</a>
+                </div>
+            </nav><!-- nav end -->
+        </header>
+        <!-- image slide section -->
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img class="slide-item--img" src="media/gallery/red_dots_on_girl.jpeg">
+            </div>
+            <div class="slide fade">
+                <img class="slide-item--img" src="media/gallery/lets_be_evil_2.png">
+            </div>
+            <div class="slide fade">
+                <img class="slide-item--img" src="media/gallery/lets_be_evil.png">
+            </div>
+            <div class="slide fade">
+                <img class="slide-item--img" src="media/gallery/almost_skeleton.jpg">
+            </div>
+        </div>
+    </main>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("slide");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].className = slides[i].className.replace("active", "")
+            }
+            slides[slideIndex-1].style.display = "block";  
+            slides[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+        };
+    </script>
+</body>
+</html>
