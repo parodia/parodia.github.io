@@ -8,7 +8,6 @@
     <link rel="shortcut icon" type="image/jpg" href="media/services/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="links/main.css" />
     <link rel="stylesheet" type="text/css" href="links/slider.css" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
 	<title>Parodia - Sanat ve Hayat</title>
 </head>
 <body>
@@ -17,11 +16,11 @@
         <header>
             <nav class="frame">
                 <div class="frame__title-wrap">
-                    <a class="frame__title" href="index.html">PARODIA.</a>
+                    <a class="frame__title" href="en-index.html">PARODIA.</a>
                 </div>
                 <a target="_blank" class="frame__behance" href="https://www.behance.net/sfsolmz">Be.</a>
                 <div class="frame__links">
-                    <a href="about.html">Hakkında</a>
+                    <a href="en-about.html">Info</a>
                 </div>
                 <div class="frame__twitter">
                     <a target="_blank" href="https://twitter.com/tw_parodia" class="frame__demo">Tw.</a>
@@ -45,16 +44,6 @@
         </div>
     </main>
     <script>
-        $( document ).ready(function(){
-            var userLang = navigator.language || navigator.userLanguage;
-            console.log(userLang);
-            if (userLang == "tr") {
-                return;
-            }
-            else {
-                window.location.replace("en-index.html");
-            }
-        });
         var slideIndex = 0;
         showSlides();
 

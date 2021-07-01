@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta content="utf-8" http-equiv="encoding">
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -15,11 +16,11 @@
         <header>
             <nav class="frame">
                 <div class="frame__title-wrap">
-                    <a class="frame__title" href="index.html">PARODIA.</a>
+                    <a class="frame__title" href="en-index.html">PARODIA.</a>
                 </div>
                 <a class="frame__behance" href="#">Be.</a>
                 <div class="frame__links">
-                    <a href="about.html">Hakkında</a>
+                    <a href="en-about.html">Info</a>
                 </div>
                 <div class="frame__twitter">
                     <a href="#" class="frame__demo">Tw.</a>
@@ -28,11 +29,11 @@
         </header>
         <div class="content--about" id="replace-color">
             <section class="first--section">
-                <p>Fatih(<small><cite>parodia\parody\illusion</cite></small>); 1989 Mayıs ayında doğdu. 2016'da Sosyal Bilimler Enstitüsü, Resim Anasanat Dalında "Yüksek Lisans" derecesini aldı. Halen üniversitelerin ilgili bölümlerine atanmayı beklemektedir.<b>(x)</b></p>
-                <p>Uzun yıllardır Dijital Ortam'a büyük bir ilgi duysa da, geleneksel olarak duyumsanabilecek "Tuval Ortamı" ve modern olanın bir parçası olarak "Dijital Ortam" arasında kavramsal bir bütünlük kurmaya çalıştı. Halen rastlantısallık ve tabiri caizse "Generative Art" üzerine çalışmalarını sürdürmektedir.</p>                    
+                <p>Fatih(<small><cite>parodia\parody\illusion</cite></small>); He was born in May 1989. In 2016, he received his "Master's Degree" in Painting from the Social Sciences Institute. He is still waiting to be appointed to the relevant departments of universities.<b>(x)</b></p>
+                <p>Although he had a great interest in Digital Media for many years, he tried to establish a conceptual integrity between "Canvas Media", which can be felt as traditional, and "Digital Media" as part of the modern one. He still continues to work on randomness and "Generative Art", so to speak.</p>
             </section>
             <section class="second--section">
-                <p>İletişim;</p>
+                <p>Contact;</p>
                 <p>beparodia@gmail.com</p>
             </section>
             <section class="end--section">
@@ -49,16 +50,6 @@
         </div>
     </main>
     <script>
-        $( document ).ready(function(){
-            var userLang = navigator.language || navigator.userLanguage;
-            console.log(userLang);
-            if (userLang == "tr") {
-                return;
-            }
-            else {
-                window.location.replace("en-about.html");
-            }
-        });
         $(document).on('scroll', function(){
             if ( $(window).scrollTop() > 750) {
                 $('#replace-color').addClass('change-color');
